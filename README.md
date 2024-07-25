@@ -12,7 +12,7 @@ Simple nim loader, made for CTF & labs
 
 ### To do:
 - [x] Load shellcode from http listener
-- [ ] Load encrypt and decrypt shellcode before injecting it into memory
+- [x] Load encrypt and decrypt shellcode before injecting it into memory
 - [ ] Patch ETW
 - [ ] Unhooking DLL
 - [ ] Hell's Gate
