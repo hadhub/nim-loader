@@ -17,5 +17,5 @@ Simple nim loader, made for CTF & labs
 - [ ] Unhooking DLL
 - [ ] Hell's Gate
 ### One day :
-- [ ] Test direct syscalls (modifié)
-- [ ] Ajout surcouche LLVM
+- [ ] syscalls
+- [ ] Add LLVM
