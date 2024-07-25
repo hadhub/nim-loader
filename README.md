@@ -19,3 +19,7 @@ Simple nim loader, made for CTF & labs
 ### One day :
 - [ ] syscalls
 - [ ] Add LLVM
+
+## Ressources 
+- https://github.com/byt3bl33d3r/OffensiveNim
+- https://github.com/Alh4zr3d/ProcessInjectionPOCs
