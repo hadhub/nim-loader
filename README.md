@@ -8,7 +8,7 @@ Simple nim loader, made for CTF & labs
 - ``nimble install winim RC4``
 
 ## Compile :
-- ``nim c -d:mingw -o:cool_name.exe main.nim``
+- ``nim c -d:mingw -o:cool_name.exe dropper.nim``
 
 ### To do:
 - [x] Load shellcode from http listener
