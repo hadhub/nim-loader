@@ -28,6 +28,7 @@ To generate a Nim executable with a relocation section you need to pass a few ad
 - [ ] Add LLVM
 
 ## Ressources 
+- https://github.com/khchen/winim
 - https://github.com/OHermesJunior/nimRC4
 - https://github.com/byt3bl33d3r/OffensiveNim
 - https://github.com/Alh4zr3d/ProcessInjectionPOCs
