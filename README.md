@@ -10,7 +10,7 @@ Simple nim loader, made for CTF & labs
 ## Compile :
 - ``nim c -d:mingw --passL:-Wl,--dynamicbase --opt:size --app:gui -o:cool_name.exe source.nim``
 
-[Official documentations about nim compiler](https://nim-lang.org/docs/nimc.html)
+[Link to Nim Compiler User Guide](https://nim-lang.org/docs/nimc.html)
 
 ### To do :
 - [x] Load shellcode from http listener
