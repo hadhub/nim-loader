@@ -5,7 +5,7 @@ Simple nim loader, made for CTF & labs
 </p>
 
 ## Install lib :
-- ``nimble install winim nimRC4``
+- ``nimble install winim RC4``
 
 ## Compile :
 - ``nim c -d:mingw -o:cool_name.exe main.nim``
