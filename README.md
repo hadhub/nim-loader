@@ -8,7 +8,14 @@ Simple nim loader, made for CTF & labs
 - ``nimble install winim RC4``
 
 ## Compile :
-- ``nim c -d:mingw -o:cool_name.exe dropper.nim``
+- ``nim c -d:mingw --passL:-Wl,--dynamicbase --opt:size -o:cool_name.exe dropper.nim``
+
+To generate a Nim executable with a relocation section you need to pass a few additional flags to the linker. (from OffensiveNim repo)
+
+- ``nim c --passL:-Wl,--dynamicbase dropper.nim``
+
+
+
 
 ### To do:
 - [x] Load shellcode from http listener
