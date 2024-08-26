@@ -12,17 +12,6 @@ Simple nim loader, made for CTF & labs
 
 [Link to Nim Compiler User Guide](https://nim-lang.org/docs/nimc.html)
 
-### To do :
-- [x] Load shellcode from http listener
-- [x] Load encrypt and decrypt shellcode before injecting it into memory
-- [ ] Patch ETW
-- [ ] Unhooking DLL
-- [ ] Hell's Gate
-
-### One day :
-- [ ] syscalls
-- [ ] Add LLVM
-
 ## Ressources 
 - https://github.com/khchen/winim
 - https://github.com/OHermesJunior/nimRC4
