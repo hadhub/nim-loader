@@ -8,7 +8,7 @@ Simple nim loader, made for CTF & labs
 - ``nimble install winim RC4``
 
 ## Compile :
-- ``nim c -d:mingw --passL:-Wl,--dynamicbase --opt:size --app:gui -o:cool_name.exe source.nim``
+- ``nim c -d:mingw -d:release --passL:-Wl,--dynamicbase --opt:size --app:gui -o:cool_name.exe source.nim``
 
 [Link to Nim Compiler User Guide](https://nim-lang.org/docs/nimc.html)
 
