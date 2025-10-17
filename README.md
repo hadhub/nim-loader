@@ -63,7 +63,7 @@ nim c main.nim
 
 For smaller binary size:
 ```bash
-nim c -d:stealth3 main.nim
+nim c -d:st3 main.nim
 ```
 
 ## Configuration
