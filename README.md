@@ -49,7 +49,11 @@ For each syscall, the code:
 - Required Nim packages:
   - `winim`
   - `httpclient`
-  - Custom RC4 module
+  - `RC4`
+
+```bash
+nimble install winim RC4
+```
 
 ## Compilation
 Debug :
