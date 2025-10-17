@@ -94,11 +94,6 @@ Security professionals can detect this technique by:
 - Monitoring APC queue operations
 - Network traffic analysis for encrypted payload downloads
 
-## References
-
-- [Hell's Gate Technique](https://vxug.fakedoma.in/papers/VXUG/Exclusive/HellsGate.pdf)
-- [Direct Syscalls in Offensive Security](https://www.mdsec.co.uk/2020/12/bypassing-user-mode-hooks-and-direct-invocation-of-system-calls-for-red-teams/)
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
