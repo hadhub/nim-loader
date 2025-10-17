@@ -102,3 +102,5 @@ Security professionals can detect this technique by:
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+This project was generated in part with AI | Contributions and improvements welcome
