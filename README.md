@@ -8,7 +8,37 @@ Simple nim loader, made for CTF & labs
 - ``nimble install winim RC4``
 
 ## Compile :
-- ``nim c -d:mingw -d:release --passL:-Wl,--dynamicbase --opt:size --app:gui -o:cool_name.exe source.nim``
+# WARNING
+- Ne pas delete nim.cfg
+
+
+## Mode DEBUG (développement)
+nim c main.nim
+
+## Mode STEALTH1 (léger - garde les checks)
+nim c -d:stealth1 main.nim
+
+## Mode STEALTH2 (moyen - sans checks, taille réduite)
+nim c -d:stealth2 main.nim
+
+## Mode STEALTH3 (maximal - anti-détection)
+nim c -d:stealth3 main.nim
+
+## Après compilation STEALTH3, appliquer:
+
+## 1. Strip agressif (si pas déjà fait)
+x86_64-w64-mingw32-strip --strip-all --strip-debug build/payload_stealth3.exe
+
+## 2. Compression UPX maximale
+upx --best --ultra-brute build/payload_stealth3.exe
+
+## 3. OU UPX avec LZMA (meilleure compression)
+upx --best --lzma build/payload_stealth3.exe
+
+## 4. Pour modifier la signature PE (optionnel, nécessite des outils supplémentaires)
+## Vous pouvez utiliser des outils comme:
+## - pe-bear pour analyser la structure PE
+## - python pefile pour modifier les headers
 
 [Link to Nim Compiler User Guide](https://nim-lang.org/docs/nimc.html)
 
